@@ -16,5 +16,4 @@ This repository helps you to setup n8n on your server. It uses docker-compose to
 ## Environment Variables to fill
 - DOMAIN_NAME: Domain name for n8n. In case you are running it on localhost, you can use `localhost`
 - SUBDOMAIN: Subdomain for n8n. In case you are running it on localhost, you can remove this variable
-- REDIS_PASSWORD: Password for redis
 - N8N_ENCRYPTION_KEY: Encryption key for n8n
