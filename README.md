@@ -1,10 +1,11 @@
 # N8N Setup
 This repository helps you to setup n8n on your server. It uses docker-compose to run n8n, redis (for cache) and Postgres (for database).
 
-## How to setup
+## How to setup & start
 - Duplicate file `.env.example` and rename it to `.env`
 - Fill in the required environment variables in `.env` file (See below for the list of environment variables)
 - Run `bash ./bin/init.sh`
+- Run `bash ./bin/start.sh`
 
 ## How to run
 - Run `bash ./bin/start.sh`
