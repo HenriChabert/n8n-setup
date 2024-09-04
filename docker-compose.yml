@@ -64,6 +64,11 @@ services:
       - POSTGRES_PASSWORD=${DB_POSTGRESDB_PASSWORD}
       - POSTGRES_DB=n8n
     restart: unless-stopped
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -h localhost -U n8n -d n8n']
+      interval: 5s
+      timeout: 5s
+      retries: 10
 
 volumes:
   n8n_data_pg:
