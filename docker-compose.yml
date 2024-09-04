@@ -48,11 +48,9 @@ services:
 
       - N8N_ENCRYPTION_KEY=${N8N_ENCRYPTION_KEY}
     volumes:
-      - /home/n8n/n8n-local-files:/files
-      - /home/n8n/.ssh:/root/.ssh
+      - ./n8n-local-files:/files
     depends_on:
       - n8n-db
-
 
   n8n-db:
     image: postgres:16.4
