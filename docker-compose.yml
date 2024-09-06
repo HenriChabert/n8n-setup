@@ -22,12 +22,11 @@ services:
     labels:
       - traefik.enable=false
     environment:
-      - N8N_HOST=${SUBDOMAIN}.${DOMAIN_NAME}
+      - N8N_HOST=${N8N_HOST}
       - N8N_PORT=5678
       - N8N_PROTOCOL=https
       - NODE_ENV=production
-      - WEBHOOK_URL=https://${SUBDOMAIN}.${DOMAIN_NAME}/
-      - WEBHOOK_TUNNEL_URL=https://${DOMAIN_NAME}/
+      - WEBHOOK_URL=${WEBHOOK_URL}
       - GENERIC_TIMEZONE=${GENERIC_TIMEZONE}
       - N8N_LOG_LEVEL=${N8N_LOG_LEVEL}
       - NODE_FUNCTION_ALLOW_BUILTIN=*
