@@ -1,1 +1,6 @@
 .env
+custom-nodes/*
+!custom-nodes/.gitkeep
+
+n8n-local-files/*
+!n8n-local-files/.gitkeep
